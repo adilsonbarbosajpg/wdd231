@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Adilson Barbosa's course home page for WDD231 at BYU-Pathway Worldwide.">
+    <meta name="author" content="Adilson Barbosa">
+
+    <title>WDD231 | Adilson Barbosa</title>
+
+    
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+   
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+   
+    <header>
+        <img src="images/logo.svg" alt="AB - Adilson Barbosa">
+
+        <span>Adilson Barbosa</span>
+
+        <button id="menuButton" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+        </nav>
+    </header>
+
+   
+    <main>
+
+        <h1>Home</h1>
+
+        
+        <section>
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Adilson Barbosa.
+                I am a student at BYU-Pathway Worldwide,
+                studying Web and Computer Programming.
+                I enjoy learning about technology,
+                programming, and web development.
+            </p>
+        </section>
+
+        
+        <section>
+            <h2>Student Photo</h2>
+
+            <img
+                src="images/profile.webp"
+                alt="Photo of Adilson Barbosa">
+        </section>
+
+        
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div id="courseButtons">
+                <button id="allCourses">All Courses</button>
+
+                <button id="wddCourses">WDD Courses</button>
+
+                <button id="cseCourses">CSE Courses</button>
+            </div>
+
+            <p id="credits"></p>
+
+            <div id="courseContainer"></div>
+        </section>
+
+    </main>
+
+    
+    <footer>
+
+        <div>
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Adilson Barbosa | Rio Grande do Sul, Brazil
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
