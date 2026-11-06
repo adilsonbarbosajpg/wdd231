@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sant'Ana do Livramento Chamber of Commerce | Directory</title>
+
+    <meta name="description" content="Directory of businesses in Sant'Ana do Livramento, Rio Grande do Sul, Brazil.">
+    <meta name="author" content="Adilson Barbosa">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Sant'Ana do Livramento Chamber of Commerce">
+    <meta property="og:description" content="Explore businesses in Sant'Ana do Livramento, Brazil.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://adilsonbarbosajpg.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://adilsonbarbosajpg.github.io/wdd231/chamber/directory.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Sant'Ana do Livramento Chamber of Commerce</h1>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Member Directory</h2>
+
+        <div class="view-buttons">
+            <button id="grid" type="button">Grid</button>
+            <button id="list" type="button">List</button>
+        </div>
+
+        <div id="members" class="grid"></div>
+    </main>
+
+    <footer>
+
+        <div class="footer-links">
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer">GitHub</a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="contact-info">
+            <p>Sant'Ana do Livramento, RS, Brazil</p>
+
+            <p>
+                Email:
+                <a href="mailto:adilson.pina528@gmail.com">
+                    adilson.pina528@gmail.com
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+555984489247">
+                    (55) 98448-9247
+                </a>
+            </p>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Adilson Barbosa | WDD 231 | Rio Grande do Sul, Brazil
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
