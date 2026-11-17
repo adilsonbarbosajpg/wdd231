@@ -51,7 +51,7 @@ nav {
     width: 100%;
 }
 
-nav.show {
+nav.open {
     display: flex;
 }
 
@@ -161,4 +161,91 @@ footer a:hover {
 footer p {
     margin-top: 10px;
     font-size: 0.9rem;
+}
+ 
+/* CHAMBER HOME PAGE */
+
+/* HERO */
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #39205c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.cta-button:hover {
+    background-color: #9b59ff;
+}
+
+/* EVENTS AND WEATHER */
+.events,
+.weather,
+.spotlights {
+    margin-bottom: 20px;
+}
+
+.weather-info {
+    margin-bottom: 15px;
+}
+
+#weather-forecast {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* COMPANY SPOTLIGHTS */
+#spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.spotlight-card {
+    padding: 15px;
+    background-color: #eee8f7;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.spotlight-card h3 {
+    color: #39205c;
+    margin-bottom: 10px;
+}
+
+.spotlight-card p {
+    margin-bottom: 5px;
+}
+
+.spotlight-card a {
+    color: #39205c;
+    overflow-wrap: anywhere;
 }

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sant'Ana do Livramento Chamber of Commerce | Home</title>
+
+    <meta name="description" content="Welcome to the Sant'Ana do Livramento Chamber of Commerce. Discover local businesses, community events, and business opportunities.">
+
+    <meta name="author" content="Adilson Barbosa">
+
+    <meta property="og:title" content="Sant'Ana do Livramento Chamber of Commerce">
+    <meta property="og:description" content="Discover local businesses and opportunities in Sant'Ana do Livramento, Brazil.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://adilsonbarbosajpg.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://adilsonbarbosajpg.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/home.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <h1>Sant'Ana do Livramento Chamber of Commerce</h1>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <img
+                src="images/hero.png"
+                alt="Panoramic view of Sant'Ana do Livramento, Rio Grande do Sul, Brazil"
+                class="hero-image"
+            >
+
+            <div class="hero-content">
+
+                <h2>Welcome to Sant'Ana do Livramento</h2>
+
+                <p>
+                    Connecting local businesses and strengthening our community.
+                </p>
+
+                <a href="join.html" class="cta-button">
+                    Join the Chamber
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- EVENTS AND WEATHER -->
+        <div class="home-grid">
+
+            <section class="events">
+
+                <h2>Current Events</h2>
+
+                <div class="event-card">
+
+                    <h3>Community Events</h3>
+
+                    <p>
+                        Discover activities and opportunities happening
+                        in the Sant'Ana do Livramento business community.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="weather">
+
+                <h2>Weather</h2>
+
+                <div id="current-weather">
+                    <p>Loading current weather...</p>
+                </div>
+
+                <h3>3-Day Forecast</h3>
+
+                <div id="weather-forecast">
+                    <p>Loading forecast...</p>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- BUSINESS SPOTLIGHTS -->
+        <section class="spotlights">
+
+            <h2>Business Spotlights</h2>
+
+            <div id="spotlight-container" class="spotlight-cards">
+                <p>Loading business spotlights...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-links">
+
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer">GitHub</a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               rel="noopener noreferrer">LinkedIn</a>
+
+        </div>
+
+        <div class="contact-info">
+
+            <p>Sant'Ana do Livramento, RS, Brazil</p>
+
+            <p>
+                Email:
+                <a href="mailto:adilson.pina528@gmail.com">
+                    adilson.pina528@gmail.com
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+555984489247">
+                    (55) 98448-9247
+                </a>
+            </p>
+
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Adilson Barbosa | WDD 231 | Rio Grande do Sul, Brazil
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>

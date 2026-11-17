@@ -1,7 +1,12 @@
 
+/* LARGER SCREEN */
+
 @media screen and (min-width: 700px) {
+
+    /* HEADER */
+
     .header-content {
-        max-width: 1000px;
+        max-width: 1100px;
         margin: 0 auto;
     }
 
@@ -16,6 +21,8 @@
         margin-top: 10px;
     }
 
+    /* DIRECTORY */
+
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -26,4 +33,37 @@
         align-items: center;
         gap: 15px;
     }
+
+    /* HOME HERO */
+
+    .hero-image {
+        height: 450px;
+    }
+
+    .hero-content {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        max-width: 500px;
+        margin: 0;
+    }
+
+    /* EVENTS AND WEATHER */
+
+    .home-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* WEATHER FORECAST */
+
+    #weather-forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* BUSINESS SPOTLIGHTS */
+
+    .spotlight-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
