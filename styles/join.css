@@ -1,0 +1,298 @@
+
+/* JOIN PAGE */
+
+.join-main {
+    display: block;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+/* HEADER */
+
+header h1 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+
+#menu-button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+
+nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+nav li {
+    width: 100%;
+}
+
+/* FORM */
+
+.form-section {
+    width: 100%;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-section label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: bold;
+}
+
+.form-section input:not([type="radio"]):not([type="submit"]),
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+    outline: 2px solid #9b59ff;
+    border-color: #39205c;
+}
+
+.form-section fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.form-section legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.form-section .radio-label {
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.radio-label input {
+    margin-right: 8px;
+}
+
+.submit-button {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #39205c;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #9b59ff;
+}
+
+/* MEMBERSHIP CARDS */
+
+.membership-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.membership-section h2 {
+    margin-bottom: 5px;
+}
+
+.membership-card {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #eee8f7;
+    animation: cardEntrance 0.8s ease both;
+}
+
+.membership-card:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-of-type(3) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-of-type(4) {
+    animation-delay: 0.6s;
+}
+
+.membership-card:nth-of-type(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card h3 {
+    color: #39205c;
+    margin-bottom: 10px;
+}
+
+.membership-card p {
+    margin-bottom: 12px;
+}
+
+.modal-button,
+.close-modal {
+    background-color: #39205c;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modal-button:hover,
+.close-modal:hover {
+    background-color: #9b59ff;
+}
+
+/* MODALS */
+
+dialog {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog h2 {
+    margin-bottom: 15px;
+}
+
+dialog ul {
+    margin: 15px 0 20px 20px;
+}
+
+dialog li {
+    margin-bottom: 8px;
+}
+
+/* THANK YOU PAGE */
+
+.thankyou-section {
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.application-details {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.application-details p {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    overflow-wrap: anywhere;
+}
+
+.application-details strong {
+    color: #39205c;
+}
+
+/* LARGE SCREEN */
+
+@media screen and (min-width: 700px) {
+
+    .join-layout {
+        grid-template-columns: 1.3fr 0.7fr;
+        align-items: start;
+    }
+
+    .membership-section {
+        position: sticky;
+        top: 20px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+        margin-left: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    nav li {
+        width: auto;
+    }
+
+    nav a {
+        border: none;
+    }
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+    }
+}

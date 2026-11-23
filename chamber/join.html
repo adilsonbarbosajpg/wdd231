@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Sant'Ana do Livramento Chamber of Commerce</title>
+
+    <meta name="description" content="Join the Sant'Ana do Livramento Chamber of Commerce and discover membership benefits.">
+    <meta name="author" content="Adilson Barbosa">
+
+    <meta property="og:title" content="Join the Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Sant'Ana do Livramento Chamber of Commerce.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://adilsonbarbosajpg.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://adilsonbarbosajpg.github.io/wdd231/chamber/join.html">
+
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Sant'Ana do Livramento Chamber of Commerce</h1>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+
+        <h2 class="page-title">Join the Chamber of Commerce</h2>
+
+        <div class="join-layout">
+
+            <!-- MEMBERSHIP FORM -->
+
+            <section class="form-section">
+
+                <h2>Membership Application</h2>
+
+                <p>Complete the form below to become a member of our Chamber.</p>
+
+                <form method="get" action="thankyou.html">
+
+                    <label>
+                        First Name *
+                        <input
+                            type="text"
+                            name="first"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Last Name *
+                        <input
+                            type="text"
+                            name="last"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input
+                            type="text"
+                            name="title"
+                            title="Enter your organizational title using at least seven letters, spaces or hyphens."
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\s-]{7,}"
+                        >
+                    </label>
+
+                    <label>
+                        Email Address *
+                        <input
+                            type="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Mobile Phone Number *
+                        <input
+                            type="tel"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Business / Organization Name *
+                        <input
+                            type="text"
+                            name="organization"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required
+                        >
+                    </label>
+
+                    <fieldset>
+
+                        <legend>Membership Level *</legend>
+
+                        <label class="radio-label">
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="np"
+                                required
+                            >
+                            NP Membership
+                        </label>
+
+                        <label class="radio-label">
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="bronze"
+                            >
+                            Bronze Membership
+                        </label>
+
+                        <label class="radio-label">
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="silver"
+                            >
+                            Silver Membership
+                        </label>
+
+                        <label class="radio-label">
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="gold"
+                            >
+                            Gold Membership
+                        </label>
+
+                    </fieldset>
+
+                    <label>
+                        Business / Organization Description
+
+                        <textarea
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="5"
+                        ></textarea>
+                    </label>
+
+                    <input
+                        type="hidden"
+                        name="timestamp"
+                        id="timestamp"
+                    >
+
+                    <input
+                        type="submit"
+                        value="Submit Application"
+                        class="submit-button"
+                    >
+
+                </form>
+
+            </section>
+
+            <!-- MEMBERSHIP LEVEL CARDS -->
+
+            <aside class="membership-section">
+
+                <h2>Membership Levels</h2>
+
+                <div class="membership-card np-card">
+                    <h3>NP Membership</h3>
+                    <p>Free membership for nonprofit organizations.</p>
+
+                    <button
+                        type="button"
+                        class="modal-button"
+                        data-modal="np-modal"
+                    >
+                        View Benefits
+                    </button>
+                </div>
+
+                <div class="membership-card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Essential benefits for growing businesses.</p>
+
+                    <button
+                        type="button"
+                        class="modal-button"
+                        data-modal="bronze-modal"
+                    >
+                        View Benefits
+                    </button>
+                </div>
+
+                <div class="membership-card silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>More visibility and business opportunities.</p>
+
+                    <button
+                        type="button"
+                        class="modal-button"
+                        data-modal="silver-modal"
+                    >
+                        View Benefits
+                    </button>
+                </div>
+
+                <div class="membership-card gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits for established businesses.</p>
+
+                    <button
+                        type="button"
+                        class="modal-button"
+                        data-modal="gold-modal"
+                    >
+                        View Benefits
+                    </button>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- NP MEMBERSHIP MODAL -->
+
+    <dialog id="np-modal">
+        <h2>NP Membership</h2>
+
+        <p><strong>Price:</strong> Free</p>
+
+        <ul>
+            <li>Access to community events.</li>
+            <li>Nonprofit organization recognition.</li>
+            <li>Networking opportunities.</li>
+        </ul>
+
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <!-- BRONZE MEMBERSHIP MODAL -->
+
+    <dialog id="bronze-modal">
+        <h2>Bronze Membership</h2>
+
+        <p><strong>Price:</strong> $50 per year</p>
+
+        <ul>
+            <li>All NP membership benefits.</li>
+            <li>Business directory listing.</li>
+            <li>Access to business networking events.</li>
+        </ul>
+
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <!-- SILVER MEMBERSHIP MODAL -->
+
+    <dialog id="silver-modal">
+        <h2>Silver Membership</h2>
+
+        <p><strong>Price:</strong> $100 per year</p>
+
+        <ul>
+            <li>All Bronze membership benefits.</li>
+            <li>Advertising opportunities.</li>
+            <li>Discounts on selected Chamber events.</li>
+            <li>Business training sessions.</li>
+        </ul>
+
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <!-- GOLD MEMBERSHIP MODAL -->
+
+    <dialog id="gold-modal">
+        <h2>Gold Membership</h2>
+
+        <p><strong>Price:</strong> $200 per year</p>
+
+        <ul>
+            <li>All Silver membership benefits.</li>
+            <li>Premium homepage business spotlight.</li>
+            <li>Priority advertising opportunities.</li>
+            <li>Exclusive networking events.</li>
+            <li>Additional event discounts.</li>
+        </ul>
+
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-links">
+
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+        </div>
+
+        <div class="contact-info">
+
+            <p>Sant'Ana do Livramento, RS, Brazil</p>
+
+            <p>
+                Email:
+                <a href="mailto:adilson.pina528@gmail.com">
+                    adilson.pina528@gmail.com
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+555984489247">
+                    (55) 98448-9247
+                </a>
+            </p>
+
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Adilson Barbosa | WDD 231 | Rio Grande do Sul, Brazil
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
